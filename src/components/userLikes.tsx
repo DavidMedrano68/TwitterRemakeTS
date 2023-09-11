@@ -42,10 +42,8 @@ export default function UserLikes({ userUID }: userLikesProps) {
         </>
       ) : null}
       {post &&
-        post.map((p, i) => {
-          if (i % 2 !== 0) {
-            return <Post postID={p.id} msgInfo={p.data} key={p.id} />;
-          }
+        post.map((p) => {
+          return <Post postID={p.id} msgInfo={p.data} key={p.id} />;
         })}
     </div>
   );

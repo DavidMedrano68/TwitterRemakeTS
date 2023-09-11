@@ -20,13 +20,11 @@ export default function MessageList2() {
             />
             <div className={`col-span-6 grid grid-rows-2 blueBorder `}>
               <div className="grid grid-cols-3">
-                <div id="Username">David M</div>
-                <div id="handle" className="text-xs">
-                  @davidM8989
-                </div>
+                <div id="chatName">Sports Chat</div>
+                <div id="chatDiscrip" className="text-xs"></div>
                 <div className="justify-self-end mr-2">4h</div>
               </div>
-              <div className="">I havent Told u</div>
+              <div className="text-muted">Talk to other users about sports</div>
             </div>
           </div>
         </TabsTrigger>
@@ -42,13 +40,11 @@ export default function MessageList2() {
             />
             <div className={`col-span-6 grid grid-rows-2 blueBorder `}>
               <div className="grid grid-cols-3">
-                <div id="Username">David M</div>
-                <div id="handle" className="text-xs">
-                  @davidM8989
-                </div>
+                <div id="chatName">Tech Chat</div>
+                <div id="chatDiscrip" className="text-xs"></div>
                 <div className="justify-self-end mr-2">4h</div>
               </div>
-              <div className="">I havent Told u</div>
+              <div className="text-muted">Talk to other users about Tech</div>
             </div>
           </div>
         </TabsTrigger>
@@ -64,13 +60,11 @@ export default function MessageList2() {
             />
             <div className={`col-span-6 grid grid-rows-2 blueBorder `}>
               <div className="grid grid-cols-3">
-                <div id="Username">David M</div>
-                <div id="handle" className="text-xs">
-                  @davidM8989
-                </div>
+                <div id="chatName">Crypto Chat</div>
+                <div id="chatDiscrip" className="text-xs"></div>
                 <div className="justify-self-end mr-2">4h</div>
               </div>
-              <div className="">I havent Told u</div>
+              <div className="text-muted">Talk to other users about crypto</div>
             </div>
           </div>
         </TabsTrigger>
@@ -86,13 +80,11 @@ export default function MessageList2() {
             />
             <div className={`col-span-6 grid grid-rows-2 blueBorder `}>
               <div className="grid grid-cols-3">
-                <div id="Username">David M</div>
-                <div id="handle" className="text-xs">
-                  @davidM8989
-                </div>
+                <div id="chatName">Gaming Chat</div>
+                <div id="chatDiscrip" className="text-xs"></div>
                 <div className="justify-self-end mr-2">4h</div>
               </div>
-              <div className="">I havent Told u</div>
+              <div className="text-muted">Talk to other users about games</div>
             </div>
           </div>
         </TabsTrigger>
