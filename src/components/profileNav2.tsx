@@ -1,10 +1,12 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import UserLikes from "./userLikes";
-import { auth } from "@/firebase/firebase.config";
 import { isSignedContext } from "@/context/authContext";
 import { useContext } from "react";
 import UserTweets from "./userTweets";
-export default function ProfileNavigation() {
+type ProfileNavigationProps = {
+  userUID: string;
+};
+export default function ProfileNavigation({ userUID }: ProfileNavigationProps) {
   const isSignedin = useContext(isSignedContext);
   return (
     <Tabs defaultValue="Tweets">
@@ -15,7 +17,7 @@ export default function ProfileNavigation() {
         <TabsTrigger value="Likes">Likes</TabsTrigger>
       </TabsList>
       <TabsContent value="Tweets">
-        {isSignedin ? <UserTweets userUID={auth.currentUser.uid} /> : null}
+        {isSignedin ? <UserTweets userUID={userUID} /> : null}
       </TabsContent>
       <TabsContent className="text-center text-2xl lowOpWhite" value="Replies">
         Coming soon
@@ -24,7 +26,7 @@ export default function ProfileNavigation() {
         Coming soon
       </TabsContent>
       <TabsContent value="Likes">
-        {isSignedin ? <UserLikes userUID={auth.currentUser.uid} /> : null}
+        {isSignedin ? <UserLikes userUID={userUID} /> : null}
       </TabsContent>
     </Tabs>
   );

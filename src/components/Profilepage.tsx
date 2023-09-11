@@ -112,7 +112,7 @@ export default function ProfilePage() {
           </div>
         )}
       </div>
-      <ProfileNavigation />
+      <ProfileNavigation userUID={userID} />
     </div>
   );
 }
