@@ -2,14 +2,9 @@ import {
   ChevronRightIcon,
   LockClosedIcon,
   AccessibilityIcon,
-  CalendarIcon,
-  EnvelopeClosedIcon,
-  FaceIcon,
-  GearIcon,
   BellIcon,
   EyeOpenIcon,
   PersonIcon,
-  RocketIcon,
 } from "@radix-ui/react-icons";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {

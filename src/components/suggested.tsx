@@ -1,4 +1,7 @@
-export default function SuggestedAccount({ imgSRC }) {
+type SuggestedAccountProps = {
+  imgSRC: string;
+};
+export default function SuggestedAccount({ imgSRC }: SuggestedAccountProps) {
   return (
     <div className=" grid grid-cols-8">
       <img
